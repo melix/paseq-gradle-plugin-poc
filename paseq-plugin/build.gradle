@@ -1,0 +1,21 @@
+plugins {
+    id 'java-gradle-plugin'
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+
+
+
+gradlePlugin {
+    plugins {
+        paseqPlugin {
+            id = 'me.champeau.paseq'
+            implementationClass = 'me.champeau.paseq.PaseqPlugin'
+        }
+    }
+}
+

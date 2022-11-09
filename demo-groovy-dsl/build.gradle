@@ -1,0 +1,15 @@
+plugins {
+    id("me.champeau.paseq")
+}
+
+paseq {
+    commands {
+        hello {
+            command = ["ls", "-al"]
+        }
+        world {
+            async = true
+            command = [file("long.sh").absolutePath]
+        }
+    }
+}

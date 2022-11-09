@@ -1,0 +1,8 @@
+pluginManagement {
+    includeBuild "paseq-plugin"
+}
+
+rootProject.name = 'paseq-demo'
+
+include "demo-groovy-dsl"
+include "demo-kotlin-dsl"
